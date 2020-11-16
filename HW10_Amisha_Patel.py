@@ -1,10 +1,11 @@
+""" Author  :: Amisha Patel 
+    Created :: 11/15/2020 """
 from typing import Tuple,Dict,DefaultDict,List
 from collections import defaultdict
 from prettytable import PrettyTable
 from HW08_Amisha_Patel import file_reader
 import sys
 import os
-# from statistics import mean
 class Students:
     """This class reprentens information about a single student with all of the relevant information including"""
     def __init__(self, cwid: str, name: str, major: str, required:List, elective:List) -> None:
@@ -147,6 +148,6 @@ class Repository:
         print(prettyTab)
         return prettyTab
 def main() -> None:  
-    Stevens: Repository = Repository("R:/Steven Institute/SSW -810-B/HW10")
+    stevens: Repository = Repository("R:/Steven Institute/SSW -810-B/HW10")
 if __name__ == '__main__':
     main()
